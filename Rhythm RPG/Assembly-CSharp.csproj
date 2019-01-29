@@ -64,9 +64,8 @@
     <Compile Include="Assets\Scripts\BeatScroller.cs" />
     <Compile Include="Assets\Scripts\ButtonController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\NoteMover.cs" />
+    <Compile Include="Assets\Scripts\NoteController.cs" />
     <Compile Include="Assets\Scripts\NoteObject.cs" />
-    <Compile Include="Assets\Scripts\SongManager.cs" />
     <Compile Include="Assets\Scripts\Visualizing\AudioSpectrum.cs" />
     <Compile Include="Assets\Scripts\Visualizing\AudioSyncer.cs" />
     <Compile Include="Assets\Scripts\Visualizing\AudioSyncScale.cs" />
