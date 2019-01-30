@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\NoteController.cs" />
     <Compile Include="Assets\Scripts\NoteObject.cs" />
+    <Compile Include="Assets\Scripts\SongInfo.cs" />
     <Compile Include="Assets\Scripts\Visualizing\AudioSpectrum.cs" />
     <Compile Include="Assets\Scripts\Visualizing\AudioSyncer.cs" />
     <Compile Include="Assets\Scripts\Visualizing\AudioSyncScale.cs" />

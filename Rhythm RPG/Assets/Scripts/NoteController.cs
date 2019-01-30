@@ -9,6 +9,7 @@ public class NoteController : MonoBehaviour {
     public float removeLineX;
     public float beat;
     public int times;
+    public float posY;
    // public bool paused;
 
     public void Initialize(float posY, float startX, float endX, float removeLineX, float posZ, float targetBeat)
@@ -17,11 +18,12 @@ public class NoteController : MonoBehaviour {
         this.endX = endX;
         this.beat = targetBeat;
         this.removeLineX = removeLineX;
+        this.posY = posY;
 
         //paused = false;
 
         //set position
-        transform.position = new Vector3(posY, startX, posZ);
+        transform.position = new Vector3(startX, posY, posZ);
 
 
         //randomize background
@@ -46,8 +48,8 @@ public class NoteController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position = Vector2.Lerp(
-        new Vector2(startX, 5.5f),
-        new Vector2(removeLineX, 5.5f),
+        new Vector2(startX, posY),
+        new Vector2(removeLineX, posY),
         (BeatScroller.instance.beatsShownInAdvance - (beat - BeatScroller.instance.songPosInBeats)) / BeatScroller.instance.beatsShownInAdvance
     );
         if (transform.position.x <= removeLineX)
