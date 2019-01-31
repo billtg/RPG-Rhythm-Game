@@ -40,6 +40,13 @@ public class BeatScroller : MonoBehaviour {
     public GameObject countDownCanvas;
     public Text countDownText;
 
+    //Dynamic UI/Gameplay info
+    public int currentMultiplier;
+    public int score;
+    public Text scoreText;
+    public Text multiplierText;
+    public Text accuracyText;
+
     //Instance
     public static BeatScroller instance;
     
@@ -48,14 +55,18 @@ public class BeatScroller : MonoBehaviour {
     {
         instance = this;
 
-        
+        currentMultiplier = 1;
+        scoreText.text = "Score: 0";
+        multiplierText.text = "Multipler: x1";
+        accuracyText.text = null;
+        score = 0;
+
         //Calculate the number of seconds per beat
         secPerBeat = 60f / beatTempo;
 
         //Set len to the number of tracks (should be 4, maybe 8 in the future)
         //start a nextIndex for each track and set it to 0
         len = trackSpawnPosY.Length;
-        Debug.Log(len.ToString());
 
         trackNextIndices = new int[len];
         for (int i = 0; i < len; i++)
@@ -107,7 +118,7 @@ public class BeatScroller : MonoBehaviour {
                 NoteController noteController = ((GameObject)Instantiate(notePrefab)).GetComponent<NoteController>();
 
                 //Set the note's startup conditions and let it fly
-                noteController.Initialize(trackSpawnPosY[i], startLineX, finishLineX, removeLineX, 0, currNote.note);
+                noteController.Initialize(trackSpawnPosY[i], startLineX, finishLineX, removeLineX, 0, currNote.note, InputController.instance.keyBindings[i], i);
 
                 //Debug.Log("Spawned note with beat #: " + notes[nextIndex].ToString() + "on beat " + songPosInBeats.ToString());
 
@@ -145,10 +156,23 @@ public class BeatScroller : MonoBehaviour {
 
     }
 
+    public void NoteHit(int noteScore, string noteAccuracy)
+    {
+        Debug.Log("Note hit BeatScroller");
+        score += noteScore;
+        scoreText.text = "Score: " + score.ToString();
+        accuracyText.text = noteAccuracy;
+    }
+    public void MissHit()
+    {
+        Debug.Log("Missed!");
+        accuracyText.text = "Missed!";
+    }
+
     void PopulateTracks()
     {
-        Debug.Log("Populating Tracks");
-        Debug.Log("total of " + tracks.Count.ToString() + " tracks");
+        //Debug.Log("Populating Tracks");
+        //Debug.Log("total of " + tracks.Count.ToString() + " tracks");
         //Create notes for each track
         for (int i=0; i<len; i++)
         {
@@ -171,8 +195,8 @@ public class BeatScroller : MonoBehaviour {
                 }
                 //Debug.Log("Track " + i.ToString() + " note " + j.ToString() + " beat" + tracks[i].notes[j].note.ToString());
             }
-            Debug.Log("Track " + i.ToString() + " populated with " + tracks[i].notes.Count.ToString() + " notes");
+            //Debug.Log("Track " + i.ToString() + " populated with " + tracks[i].notes.Count.ToString() + " notes");
         }
-        Debug.Log("Tracks populated");
+        //Debug.Log("Tracks populated");
     }
 }

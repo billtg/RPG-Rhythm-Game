@@ -64,6 +64,8 @@
     <Compile Include="Assets\Scripts\BeatScroller.cs" />
     <Compile Include="Assets\Scripts\ButtonController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\InputController.cs" />
+    <Compile Include="Assets\Scripts\KeyboardInputManager.cs" />
     <Compile Include="Assets\Scripts\NoteController.cs" />
     <Compile Include="Assets\Scripts\NoteObject.cs" />
     <Compile Include="Assets\Scripts\SongInfo.cs" />

@@ -7,23 +7,22 @@ public class ButtonController : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
     public Sprite defaultImage;
     public Sprite pressedImage;
+    public int buttonInt;
 
-    public KeyCode keyToPress;
-
-	// Use this for initialization
-	void Start () {
+    private void Start()
+    {
         spriteRenderer = GetComponent<SpriteRenderer>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyDown(keyToPress))
-        {
-            spriteRenderer.sprite = pressedImage;
-        }
-        if (Input.GetKeyUp(keyToPress))
-        {
-            spriteRenderer.sprite = defaultImage;
-        }
-	}
+    }
+
+    public void Pressed()
+    {
+        spriteRenderer.sprite = pressedImage;
+        //Debug.Log("Button " + buttonInt + " pressed");
+    }
+
+    public void UnPressed()
+    {
+        spriteRenderer.sprite = defaultImage;
+        //Debug.Log("Button " + buttonInt + " released");
+    }
 }
