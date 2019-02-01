@@ -69,9 +69,9 @@
     <Compile Include="Assets\Scripts\NoteController.cs" />
     <Compile Include="Assets\Scripts\NoteObject.cs" />
     <Compile Include="Assets\Scripts\SongInfo.cs" />
-    <Compile Include="Assets\Scripts\Visualizing\AudioSpectrum.cs" />
-    <Compile Include="Assets\Scripts\Visualizing\AudioSyncer.cs" />
-    <Compile Include="Assets\Scripts\Visualizing\AudioSyncScale.cs" />
+    <Compile Include="Assets\Scripts\Visualizing\AmplitudeVis.cs" />
+    <Compile Include="Assets\Scripts\Visualizing\BandVis.cs" />
+    <Compile Include="Assets\Scripts\Visualizing\Visualizer.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Graham/Documents/Unity/02 - Game Projects/03 - Rhythm RPG/Rhythm RPG/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
