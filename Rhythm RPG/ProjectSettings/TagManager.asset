@@ -46,3 +46,6 @@ TagManager:
   - name: Arrows
     uniqueID: 2794211987
     locked: 0
+  - name: Middle Thing
+    uniqueID: 1618074979
+    locked: 0

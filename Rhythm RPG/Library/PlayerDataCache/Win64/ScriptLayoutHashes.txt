@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Graham/Documents/Unity/02 - Game Projects/03 - Rhythm RPG/Rhythm RPG/Builds/v0.0.05 - Feb 3 2019/Rhythm RPG.exe
+C:/Users/Graham/Documents/Unity/02 - Game Projects/03 - Rhythm RPG/Rhythm RPG/Builds/v0.0.06 - Feb 3 2019/Rhythm RPG.exe
 SceneListBegin?
 Assets/Scenes/Start.unity
 SceneListEnd?

@@ -94,7 +94,8 @@ public class NoteController : MonoBehaviour {
     {
         Debug.Log("Arrow hit!");
         //Check accuracy. Current only checks one side, but ultimatley it should check the variable for perfect hit line
-        float accuracy = Mathf.Abs(this.transform.position.x + 10);
+        float accuracy = Mathf.Abs(this.transform.position.x + -BeatScroller.instance.finishLineX);
+        Debug.Log(accuracy.ToString());
         if (accuracy < 0.25)
         {
             PerfectHit();
