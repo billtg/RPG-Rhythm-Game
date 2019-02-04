@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Graham/Documents/Unity/02 - Game Projects/03 - Rhythm RPG/Rhythm RPG/Builds/v0.0.06 - Feb 3 2019/Rhythm RPG.exe
+C:/Users/Graham/Documents/Unity/02 - Game Projects/03 - Rhythm RPG/Rhythm RPG/Builds/v0.0.07 - Feb 4 2019/Rhythm RPG.exe
 SceneListBegin?
 Assets/Scenes/Start.unity
 SceneListEnd?
@@ -86,7 +86,7 @@ a44114bd4fa541174f78b4bb92bacb48 UnityEngine.UI.dll:UnityEngine.EventSystems.Sta
 e90403eeda069970e0b9de1533de13a6 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 2d58ca16854b99daea8c45e9c0f367b7 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 16da51d1b62ef6d4ee1849350434023b UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-0c92599c9e95a565b416d1f292f7e548 Assembly-CSharp.dll:.ButtonController
+fc5a9403cce8608913509dd06ad2b0db Assembly-CSharp.dll:.ButtonController
 486cd95c82d8305219c352c06b776e1f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 9e61f3535f3c55760a1cedfbd114f4af UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 754551afe4f2531f58476bf14c510657 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -126,9 +126,9 @@ dfd33ff9ae3ce8d7ca1f22b475ec2387 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 96f3ea9f23b6f08e60710ebb4af49174 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 f16835701e71dd5d6fb1fed4b7aff1d8 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 50add2e46409567f262604cabcc3ddc3 Assembly-CSharp.dll:.GameManager
-64b8670f1894b2e66bec0757a0081898 Assembly-CSharp.dll:.BeatScroller
+336b91a9ce944f53a4ba47bbf2cc724c Assembly-CSharp.dll:.BeatScroller
 486cd95c82d8305219c352c06b776e1f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
-1634aa5b5a0b061960353465fd2499d9 Assembly-CSharp.dll:.NoteController
+8192923654787333e08217e46ffb046e Assembly-CSharp.dll:.NoteController
 eaf0bcdb10d442a4029d615f41d09957 Unity.TextMeshPro.dll:TMPro.TextContainer
 201273fb4f889724fb090164b7d6c657 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 486cd95c82d8305219c352c06b776e1f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -176,3 +176,7 @@ dfe94ce29eee07c2e4fbe616596c701a Assembly-CSharp.dll:.AmplitudeVis
 2deda0534ea275d2173978503a19e5a1 Assembly-CSharp.dll:.BandVis
 4e6304d2580a268b2dc1980e0ba559ef Assembly-CSharp.dll:.NoteObject
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.BeatCount
+5b1962e0626bad14e10d08887ea6f31a Assembly-CSharp.dll:.BeatPulser
+d77b859ab2d843b625eb2eaa91682432 Assembly-CSharp.dll:.MaskMover
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.OctopusIntro

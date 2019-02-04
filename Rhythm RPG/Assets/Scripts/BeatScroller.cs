@@ -8,6 +8,7 @@ public class BeatScroller : MonoBehaviour {
     //sStatic song information
     public float beatTempo;
     public float secPerBeat;
+    public float offsetToFirstBeat;
     public AudioSource audioSource { get { return GetComponent<AudioSource>(); } }
     private SongInfo songInfo;
 
@@ -43,9 +44,13 @@ public class BeatScroller : MonoBehaviour {
     //Dynamic UI/Gameplay info
     public int currentMultiplier;
     public int score;
+    public int multiplier = 1;
+    public int comboCount = 0;
     public Text scoreText;
     public Text multiplierText;
     public Text accuracyText;
+    public Text comboText;
+    public Text winText;
 
     //Instance
     public static BeatScroller instance;
@@ -55,10 +60,12 @@ public class BeatScroller : MonoBehaviour {
     {
         instance = this;
 
+        //Reset Score and UI objects.
         currentMultiplier = 1;
         scoreText.text = "Score: 0";
         multiplierText.text = "Multipler: x1";
         accuracyText.text = null;
+        comboText.text = null;
         score = 0;
 
         //Calculate the number of seconds per beat
@@ -133,7 +140,7 @@ public class BeatScroller : MonoBehaviour {
     {
         Debug.Log("Starting Music");
         //Record the time when the audio starts
-        dspSongTime = (float)AudioSettings.dspTime;
+        dspSongTime = (float)AudioSettings.dspTime + offsetToFirstBeat;
 
         //start the song
         audioSource.Play();
@@ -158,15 +165,66 @@ public class BeatScroller : MonoBehaviour {
 
     public void NoteHit(int noteScore, string noteAccuracy)
     {
-        Debug.Log("Note hit BeatScroller");
-        score += noteScore;
+        //Debug.Log("Note hit BeatScroller");
+        score += noteScore * multiplier;
         scoreText.text = "Score: " + score.ToString();
         accuracyText.text = noteAccuracy;
+        comboCount++;
+        if (comboCount > 5)
+        {
+            comboText.text = "Combo: \n" + comboCount.ToString(); 
+        }
+        UpgradeMultiplier();
+        MaskMover.instance.MoveRight();
     }
     public void MissHit()
     {
         Debug.Log("Missed!");
         accuracyText.text = "Missed!";
+        multiplier = 1;
+        multiplierText.text = "Multiplier: x1";
+        comboCount = 0;
+        comboText.text = null;
+        MaskMover.instance.MoveLeft();
+    }
+
+    void UpgradeMultiplier()
+    {
+        if (comboCount == 5)
+        {
+            multiplier = 2;
+        }
+        if (comboCount == 15)
+        {
+            multiplier = 3;
+        }
+        if (comboCount == 40)
+        {
+            multiplier = 4;
+        }
+        multiplierText.text = "Multiplier: x" + multiplier.ToString();
+    }
+
+    public void StopGame(bool winCondition)
+    {
+        if (winCondition)
+        {
+            Debug.Log("Game won");
+            //audioSource.Stop();
+            winText.gameObject.SetActive(true);
+            accuracyText.gameObject.SetActive(false);
+            winText.text = "You \nWin!";
+            musicStarted = false;
+        }
+        else
+        {
+            Debug.Log("Game lost");
+            //audioSource.Stop();
+            winText.gameObject.SetActive(true);
+            accuracyText.gameObject.SetActive(false);
+            winText.text = "You \nLose!";
+            musicStarted = false;
+        }
     }
 
     void PopulateTracks()
@@ -176,7 +234,7 @@ public class BeatScroller : MonoBehaviour {
         //Create notes for each track
         for (int i=0; i<len; i++)
         {
-            Debug.Log("Populating track " + i.ToString());
+            //Debug.Log("Populating track " + i.ToString());
             tracks[i].notes = new List<SongInfo.Note>();
             //For this track, make the test notes, based on the time signature
             for (int j = 0; j < numberOfNotes; j++)
@@ -185,7 +243,7 @@ public class BeatScroller : MonoBehaviour {
                 if (j == 0)
                 {
                     //Make the first note occur timeSig beats after the track start, plus startDelay beats, plus i (offsets tracks)
-                    tracks[i].notes[j].note = timeSig + startDelayBeats + i;
+                    tracks[i].notes[j].note = timeSig + startDelayBeats + timeSig*i/tracks.Count;
                     //Debug.Log(notes[j].ToString());
                 }
                 else

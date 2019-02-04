@@ -14,6 +14,9 @@ public class NoteController : MonoBehaviour {
     public KeyCode keyCode;
     // public bool paused;
 
+    public float perfectThreshold;
+    public float goodThreshold;
+
     public void Initialize(float posY, float startX, float endX, float removeLineX, float posZ, float targetBeat, KeyCode keyCode, int track)
     {
         this.startX = startX;
@@ -63,11 +66,12 @@ public class NoteController : MonoBehaviour {
         transform.position = Vector2.Lerp(
         new Vector2(startX, posY),
         new Vector2(removeLineX, posY),
-        (BeatScroller.instance.beatsShownInAdvance - (beat - BeatScroller.instance.songPosInBeats)) / BeatScroller.instance.beatsShownInAdvance);
+        (BeatScroller.instance.beatsShownInAdvance - (beat - BeatScroller.instance.songPosInBeats)) / (BeatScroller.instance.beatsShownInAdvance) * (endX-startX) / (removeLineX-startX));
 
         //Ddestroy the note if it hits the remove line
         if (transform.position.x <= removeLineX)
         {
+            MissHit();
             Destroy(gameObject);
         }
     }
@@ -94,12 +98,12 @@ public class NoteController : MonoBehaviour {
     {
         Debug.Log("Arrow hit!");
         //Check accuracy. Current only checks one side, but ultimatley it should check the variable for perfect hit line
-        float accuracy = Mathf.Abs(this.transform.position.x + -BeatScroller.instance.finishLineX);
+        float accuracy = Mathf.Abs(this.beat - BeatScroller.instance.songPosInBeats);
         Debug.Log(accuracy.ToString());
-        if (accuracy < 0.25)
+        if (accuracy < perfectThreshold)
         {
             PerfectHit();
-        } else if (accuracy < 0.5)
+        } else if (accuracy < goodThreshold)
         {
             GoodHit();
         } else
@@ -132,6 +136,12 @@ public class NoteController : MonoBehaviour {
         BeatScroller.instance.NoteHit(10, "Bad!");
         Destroy(gameObject);
         //gameObject.SetActive(false);
+    }
+
+    public void MissHit()
+    {
+        //Boo!
+        BeatScroller.instance.MissHit();
     }
 
     private void SetRotation(int trackNum)

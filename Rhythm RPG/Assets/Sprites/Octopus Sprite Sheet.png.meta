@@ -1,0 +1,2190 @@
+fileFormatVersion: 2
+guid: 733001c61e7da744891cddb729fd12b1
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Octopus Sprite Sheet_0
+    21300002: Octopus Sprite Sheet_1
+    21300004: Octopus Sprite Sheet_2
+    21300006: Octopus Sprite Sheet_3
+    21300008: Octopus Sprite Sheet_4
+    21300010: Octopus Sprite Sheet_5
+    21300012: Octopus Sprite Sheet_6
+    21300014: Octopus Sprite Sheet_7
+    21300016: Octopus Sprite Sheet_8
+    21300018: Octopus Sprite Sheet_9
+    21300020: Octopus Sprite Sheet_10
+    21300022: Octopus Sprite Sheet_11
+    21300024: Octopus Sprite Sheet_12
+    21300026: Octopus Sprite Sheet_13
+    21300028: Octopus Sprite Sheet_14
+    21300030: Octopus Sprite Sheet_15
+    21300032: Octopus Sprite Sheet_16
+    21300034: Octopus Sprite Sheet_17
+    21300036: Octopus Sprite Sheet_18
+    21300038: Octopus Sprite Sheet_19
+    21300040: Octopus Sprite Sheet_20
+    21300042: Octopus Sprite Sheet_21
+    21300044: Octopus Sprite Sheet_22
+    21300046: Octopus Sprite Sheet_23
+    21300048: Octopus Sprite Sheet_24
+    21300050: Octopus Sprite Sheet_25
+    21300052: Octopus Sprite Sheet_26
+    21300054: Octopus Sprite Sheet_27
+    21300056: Octopus Sprite Sheet_28
+    21300058: Octopus Sprite Sheet_29
+    21300060: Octopus Sprite Sheet_30
+    21300062: Octopus Sprite Sheet_31
+    21300064: Octopus Sprite Sheet_32
+    21300066: Octopus Sprite Sheet_33
+    21300068: Octopus Sprite Sheet_34
+    21300070: Octopus Sprite Sheet_35
+    21300072: Octopus Sprite Sheet_36
+    21300074: Octopus Sprite Sheet_37
+    21300076: Octopus Sprite Sheet_38
+    21300078: Octopus Sprite Sheet_39
+    21300080: Octopus Sprite Sheet_40
+    21300082: Octopus Sprite Sheet_41
+    21300084: Octopus Sprite Sheet_42
+    21300086: Octopus Sprite Sheet_43
+    21300088: Octopus Sprite Sheet_44
+    21300090: Octopus Sprite Sheet_45
+    21300092: Octopus Sprite Sheet_46
+    21300094: Octopus Sprite Sheet_47
+    21300096: Octopus Sprite Sheet_48
+    21300098: Octopus Sprite Sheet_49
+    21300100: Octopus Sprite Sheet_50
+    21300102: Octopus Sprite Sheet_51
+    21300104: Octopus Sprite Sheet_52
+    21300106: Octopus Sprite Sheet_53
+    21300108: Octopus Sprite Sheet_54
+    21300110: Octopus Sprite Sheet_55
+    21300112: Octopus Sprite Sheet_56
+    21300114: Octopus Sprite Sheet_57
+    21300116: Octopus Sprite Sheet_58
+    21300118: Octopus Sprite Sheet_59
+    21300120: Octopus Sprite Sheet_60
+    21300122: Octopus Sprite Sheet_61
+    21300124: Octopus Sprite Sheet_62
+    21300126: Octopus Sprite Sheet_63
+    21300128: Octopus Sprite Sheet_64
+    21300130: Octopus Sprite Sheet_65
+    21300132: Octopus Sprite Sheet_66
+    21300134: Octopus Sprite Sheet_67
+    21300136: Octopus Sprite Sheet_68
+    21300138: Octopus Sprite Sheet_69
+    21300140: Octopus Sprite Sheet_70
+    21300142: Octopus Sprite Sheet_71
+    21300144: Octopus Sprite Sheet_72
+    21300146: Octopus Sprite Sheet_73
+    21300148: Octopus Sprite Sheet_74
+    21300150: Octopus Sprite Sheet_75
+    21300152: Octopus Sprite Sheet_76
+    21300154: Octopus Sprite Sheet_77
+    21300156: Octopus Sprite Sheet_78
+    21300158: Octopus Sprite Sheet_79
+    21300160: Octopus Sprite Sheet_80
+    21300162: Octopus Sprite Sheet_81
+    21300164: Octopus Sprite Sheet_82
+    21300166: Octopus Sprite Sheet_83
+    21300168: Octopus Sprite Sheet_84
+    21300170: Octopus Sprite Sheet_85
+    21300172: Octopus Sprite Sheet_86
+    21300174: Octopus Sprite Sheet_87
+    21300176: Octopus Sprite Sheet_88
+    21300178: Octopus Sprite Sheet_89
+    21300180: Octopus Sprite Sheet_90
+    21300182: Octopus Sprite Sheet_91
+    21300184: Octopus Sprite Sheet_92
+    21300186: Octopus Sprite Sheet_93
+    21300188: Octopus Sprite Sheet_94
+    21300190: Octopus Sprite Sheet_95
+    21300192: Octopus Sprite Sheet_96
+    21300194: Octopus Sprite Sheet_97
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2354
+        width: 290
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e304e8cf29f12ed43bbb5127bfff026c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 2338
+        width: 304
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe39579eb8ec154f8c207dabdc44664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 2338
+        width: 291
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28a5ac4888f545488f83e32d04f2d03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 2338
+        width: 286
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a021b82963f0143adb69611a51c4bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 2343
+        width: 296
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefc962a7a448994586544cb80f37895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 2410
+        width: 114
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7545a0510c603fc44b536651f1a1ea73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 2499
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25d469f8a8dda44daa713bb0bcb1118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 2510
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f30f65ce6d973947ad74c4a404e5bde
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 2495
+        width: 67
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69063ee8f17bacf41a51c9874c1be4a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 2322
+        width: 107
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd2fe9b2ed30ab4a817eb7d24a951f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 2343
+        width: 56
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2321ec7cc6e6b042946963cc6563a75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 2379
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39d4fe18ec3f344ba3b4999a9ae4db3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 2347
+        width: 55
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76a3f15b13258c4ea3df59d8336ce2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 2347
+        width: 56
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a84e2d1d785b845a4ee7cec32159ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 2062
+        width: 251
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d974d28c4ce543f4ba9b853526403b45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 2210
+        width: 110
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031a91ed917115f44b47da20dbb45c28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 2291
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c3bd8ad049a23419687fee1dafe98b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 2250
+        width: 63
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5a3f6daccc15448b39578a92b16a52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 2051
+        width: 114
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518219e935a08ec4f8314e49b0c47f92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 2047
+        width: 331
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6dfdb5d6bebbd349bfd147c9182efae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 2038
+        width: 251
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec76af8114696ff4da3d91b672d5d6d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 2034
+        width: 114
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadb829d3ed956b41b8daf31b7807ab9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 2051
+        width: 236
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4650a677ccac8489fbeb34dd1c749f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 2167
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73c64b182147b243ab9f41b6eeea3e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 2146
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adfb4a28880d7f43b38078b356603da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 2158
+        width: 131
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23b5b14cd0d38246bb33dfbf7358948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1759
+        width: 332
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cac75b261839754e87942b26aa3932c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1742
+        width: 236
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079ca37e9387f644b8e0c8f38e4b948b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1750
+        width: 232
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4a7e1d3ced44349a4451cc049e9d4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1727
+        width: 215
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d904ba8a26d91346bf15fe70b13ae7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 1738
+        width: 163
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0492ea0ffa55d7248990e31ea07e20db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 1770
+        width: 303
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f198f0a9ae9dcd349900028aa9dd7416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 1762
+        width: 223
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3b69d53e6d1124593d7744e9b90900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 2186
+        y: 1778
+        width: 359
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78e232fef2c284428bace94c69e5bb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 1750
+        width: 247
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d937fd7774bf0eb47a424e997b35f77e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1482
+        width: 232
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02aca0f55b812a349b0866b9df7a3315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1463
+        width: 232
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4d81ab3ed22874788c512228f54d6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1442
+        width: 231
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fa2368d668e4347929d17715635bd1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1442
+        width: 216
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35d51d53332144428a0b6d102659e8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 1442
+        width: 224
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf43b2dc011c8c40a9d874ca5dbc09d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 1478
+        width: 412
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443c8636bc489b044b91a095fd68cc20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 1470
+        width: 314
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba5b7848fcab7642a4d8ae235a04720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 1474
+        width: 232
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad387393a72456e43aff7d0c13d0e1fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 1454
+        width: 180
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b4c5aba3ffcfa46962c84d70d72f6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1199
+        width: 222
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada24c18b08e7e14cb42dce5fd897da6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 1186
+        width: 223
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c48c025c1636e448ac52194c0391b72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1199
+        width: 415
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28686f1339648624291aef09e02e0765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1154
+        width: 236
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f99e4b0200a5ee4ca3c422862a51c3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 1150
+        width: 236
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509394e880cab4c4eb01d102b8a64580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 1158
+        width: 247
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0baaef3689d181b44b5a860e531fd26f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 1171
+        width: 247
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b70b2d1c11e064fa352d18f53ae0a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 2126
+        y: 1174
+        width: 363
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c04c94da276074ea80a23307339d6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 1158
+        width: 320
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef89dccfc2e31b4dbcbd111a636c04f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 922
+        width: 311
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c19c7a4ca78fe044b074e80f47f9d85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 918
+        width: 288
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64aee7ebbc267d844a41306e520196a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 903
+        width: 288
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3658ed47c747c4bb2573f128406f81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 894
+        width: 319
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5cac71274e3084fb747680bf27b133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 894
+        width: 356
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7c59994a94b514f9b524d862b452e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 890
+        width: 262
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e6b10bf8e622d4fac65a3f74f8c310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 906
+        width: 192
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1cc52c8d47396c4fa4c9353356b5a7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 2203
+        y: 906
+        width: 191
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22928453a80f5324ebfeb9f528326e44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 800
+        width: 406
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a577cab60bbfabb46b4ac210a9b5073d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 604
+        width: 256
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8ed68c004d08f47b4220083eb01a96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 632
+        width: 313
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d27328d236a8b4aa1653c0ef8682de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 600
+        width: 258
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2d6b4bb3131f44caae528586c80bdb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 619
+        width: 229
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b57aa602b9f3846b21b776f96698ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 604
+        width: 262
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0642d34419bc7458f92ae9ffe8fd3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 604
+        width: 214
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a15e32cadb13e4bafa3cd0a8cc91a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 604
+        width: 222
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb63fe6ba406934e98edc0dcc8d8197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 579
+        width: 244
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038705812aeee3b449cb7130afdc3073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 2383
+        y: 591
+        width: 246
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3ca0b495e1bba4ca1fccd130445ae0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 304
+        width: 316
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4b75b478a236547a3c388ee6e60182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 287
+        width: 310
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1958453ce0dd33e4491fb35ac371c53b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 255
+        width: 162
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfe3ff4487e09c4f90abfbb4c27cfb0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 267
+        width: 177
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957dc90059ea756429755ae1f4c7c996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 255
+        width: 213
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a446db640d8f1f4c8eca1b94ee7db9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 279
+        width: 220
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f229becc0f5547b4887790125ceecd32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 283
+        width: 314
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0382d8aa85afe0a4c85289a8861ef104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 280
+        width: 413
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac1103aeeb908b4aaa094f047939596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 263
+        width: 429
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40092e04f8eb4f7479bdfa6c5920a3f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 36
+        width: 358
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba3469654d4bc54d9e970601bbcc911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 126
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5839d8122b99d3746a56c60ead336a23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 118
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baff973e8f051e14598c3af928865b1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 118
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c524d5afb49f546a5ae96857d06fe8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 126
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efed47c5b2cca914197ed124f048e192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 126
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6ba9206070f8d4087c201a581d5c8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 126
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f8dcc79456bd94c8c42159713253c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 118
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb31b56cb10f6b240847318210bb37aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 62
+        width: 15
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b833c7193e6fa4091ee3835a545978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 62
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e84616fb5ac98f498c0ba17339f49f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 62
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52880d287c0a1494e9941beedee7536c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 62
+        width: 16
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356e771b9e572b64bb717ad6e59966c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 62
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cd78043c94de44a8594bee3b27e216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 62
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81eb34cf59dc10340a462e5d50d136fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 54
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f78ec04b17fc443b731fa7b48c8265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 62
+        width: 15
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecc0ef84d8600347a5812fe7773b513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 62
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9121fb60db3c9b748bce1628ee26d6be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Octopus Sprite Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 62
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebc655052708cf4a99e7071e2638ca5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6c55a54d971c8234cb99fb76e86e52ea
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
