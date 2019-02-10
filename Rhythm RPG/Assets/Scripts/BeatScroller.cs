@@ -40,6 +40,7 @@ public class BeatScroller : MonoBehaviour {
     public float removeLineX;
     public GameObject countDownCanvas;
     public Text countDownText;
+    public GameObject gameOverCanvas;
 
     //Dynamic UI/Gameplay info
     public int currentMultiplier;
@@ -207,6 +208,7 @@ public class BeatScroller : MonoBehaviour {
 
     public void StopGame(bool winCondition)
     {
+        gameOverCanvas.SetActive(true);
         if (winCondition)
         {
             Debug.Log("Game won");

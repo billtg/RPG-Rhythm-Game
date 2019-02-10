@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\NoteObject.cs" />
     <Compile Include="Assets\Scripts\OctopusIntro.cs" />
     <Compile Include="Assets\Scripts\SongInfo.cs" />
+    <Compile Include="Assets\Scripts\UI\GameOverUI.cs" />
     <Compile Include="Assets\Scripts\Visualizing\AmplitudeVis.cs" />
     <Compile Include="Assets\Scripts\Visualizing\BandVis.cs" />
     <Compile Include="Assets\Scripts\Visualizing\BeatPulser.cs" />
