@@ -20,25 +20,25 @@ public class MaskMover : MonoBehaviour {
 		
 	}
 
-    public void MoveLeft()
+    public void MoveForward()
     {
         if (BeatScroller.instance.musicStarted)
         {
-            this.transform.Translate(new Vector3(-forwardDistance, 0));
-            if (this.transform.position.x <= BeatScroller.instance.finishLineX + 1)
+            this.transform.Translate(new Vector3(forwardDistance, 0));
+            if (this.transform.position.x >= BeatScroller.instance.finishLineX + 1)
             {
                 BeatScroller.instance.StopGame(false);
             }
         }
     }
 
-    public void MoveRight()
+    public void MoveBackward()
     {
         if (BeatScroller.instance.musicStarted)
         {
-            if (this.transform.position.x <= maximumPush)
+            if (this.transform.position.x >= maximumPush)
             {
-                this.transform.Translate(new Vector3(backwardDistance, 0));
+                this.transform.Translate(new Vector3(-backwardDistance, 0));
             }
         }
     }

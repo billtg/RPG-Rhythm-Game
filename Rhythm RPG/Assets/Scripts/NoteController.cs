@@ -69,7 +69,7 @@ public class NoteController : MonoBehaviour {
         (BeatScroller.instance.beatsShownInAdvance - (beat - BeatScroller.instance.songPosInBeats)) / (BeatScroller.instance.beatsShownInAdvance) * (endX-startX) / (removeLineX-startX));
 
         //Ddestroy the note if it hits the remove line
-        if (transform.position.x <= removeLineX)
+        if (transform.position.x >= removeLineX)
         {
             MissHit();
             Destroy(gameObject);

@@ -8,6 +8,9 @@ public class OctopusIntro : MonoBehaviour {
     private AnimatorClipInfo[] animatorClipInfo;
     private float startTime;
     private bool stopIntro;
+    public float startX;
+    public float startY;
+    public float finishY;
 
 	// Use this for initialization
 	void Start () {
@@ -21,9 +24,9 @@ public class OctopusIntro : MonoBehaviour {
 	void Update () {
         if (!stopIntro)
         {
-            this.transform.position = Vector2.Lerp(new Vector2(3, -2), new Vector2(3, 5), (Time.time - startTime) / animatorClipInfo[0].clip.length);
+            this.transform.position = Vector2.Lerp(new Vector2(startX, startY), new Vector2(startX, finishY), (Time.time - startTime) / animatorClipInfo[0].clip.length);
         }
-        if (this.transform.position.y >= 5)
+        if (this.transform.position.y >= finishY)
         {
             stopIntro = true;
         }
