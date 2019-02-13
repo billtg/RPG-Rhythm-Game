@@ -24,11 +24,15 @@ public class SongInfo : ScriptableObject
 	[Header("Playing Information")]
 	public AudioClip[] defaultBeats;
 
-	public float songOffset;
 	public float bpm;
+    public float songOffset;
+    public float startDelayBeats;
 
-	[Header("At least > 3 for the first note.")]
+    [Header("At least > 3 for the first note.")]
 	public Track[] tracks;
+
+    [Header("Fill tracks")]
+    public Track[] fillTracks;
 
 	// when not calculated, it's -1
 	private int totalHits = -1;

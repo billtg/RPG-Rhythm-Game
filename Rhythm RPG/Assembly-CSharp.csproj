@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\NoteController.cs" />
     <Compile Include="Assets\Scripts\NoteObject.cs" />
     <Compile Include="Assets\Scripts\OctopusIntro.cs" />
+    <Compile Include="Assets\Scripts\SongEditor\SongEditor.cs" />
     <Compile Include="Assets\Scripts\SongInfo.cs" />
     <Compile Include="Assets\Scripts\UI\FillBar.cs" />
     <Compile Include="Assets\Scripts\UI\GameOverUI.cs" />

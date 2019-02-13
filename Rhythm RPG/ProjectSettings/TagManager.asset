@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Activator
   - SongManager
+  - BeatBar
+  - Arrow
+  - FillArrow
   layers:
   - Default
   - TransparentFX
