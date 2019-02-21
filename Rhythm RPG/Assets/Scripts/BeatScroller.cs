@@ -74,6 +74,7 @@ public class BeatScroller : MonoBehaviour {
     public Text fillText;
     public Text songTimeText;
 
+
     //Instance
     public static BeatScroller instance;
     
@@ -199,7 +200,7 @@ public class BeatScroller : MonoBehaviour {
                 //Set the note's startup conditions and let it fly
                 noteController.Initialize(trackSpawnPosY[i], startLineX, finishLineX, removeLineX, 0, currNote.note, InputController.instance.keyBindings[i], i);
 
-                Debug.Log("Spawned note with beat #: " + currTrack.notes[nextIndex].ToString() + "on beat " + songPosInBeats.ToString());
+                //Debug.Log("Spawned note with beat #: " + currTrack.notes[nextIndex].ToString() + "on beat " + songPosInBeats.ToString());
 
                 //Increase the note index
                 trackNextIndices[i]++;
@@ -244,6 +245,7 @@ public class BeatScroller : MonoBehaviour {
     public void NoteHit(int noteScore, string noteAccuracy)
     {
         //Debug.Log("Note hit BeatScroller");
+        BattleManager.instance.AddMana();
         score += noteScore * multiplier;
         scoreText.text = "Score: " + score.ToString();
         accuracyText.text = noteAccuracy;
@@ -263,6 +265,7 @@ public class BeatScroller : MonoBehaviour {
     public void MissHit()
     {
         Debug.Log("Missed!");
+        BattleManager.instance.ClearOverCharge();
         accuracyText.text = "Missed!";
         multiplier = 1;
         multiplierText.text = "Multiplier: x1";
