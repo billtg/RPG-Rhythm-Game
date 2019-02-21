@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InputController : MonoBehaviour {
 
@@ -10,6 +11,7 @@ public class InputController : MonoBehaviour {
 
     //Button input configuration
     public List<KeyCode> keyBindings;
+    public KeyCode quitKey;
     public List<ButtonController> buttons;
 
     public static InputController instance;
@@ -25,7 +27,6 @@ public class InputController : MonoBehaviour {
         keyBindings.Add(KeyCode.LeftArrow);
         keyBindings.Add(KeyCode.RightArrow);
         keyBindings.Add(KeyCode.DownArrow);
-        keyBindings.Add(KeyCode.Escape);
 
         trackLength = keyBindings.Count;
         Debug.Log("IC Tracks: " + trackLength.ToString());
@@ -43,6 +44,11 @@ public class InputController : MonoBehaviour {
             {
                 buttons[i].UnPressed();
             }
+        }
+        if (Input.GetKeyDown(quitKey))
+        {
+            Debug.Log("Quitting to menu");
+            SceneManager.LoadScene(0);
         }
     }
 

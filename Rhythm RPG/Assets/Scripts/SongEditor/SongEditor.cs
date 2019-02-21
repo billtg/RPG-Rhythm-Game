@@ -40,10 +40,18 @@ public class SongEditor : MonoBehaviour {
     int numBars;
     public KeyCode fillButton;
 
-    //Note
+    //Song Playing
+    public KeyCode playSong;
+    public bool isPlaying;
+
+    //Instancing
+    public static SongEditor instance;
 
     // Use this for initialization
     void Start () {
+        instance = this;
+
+        //load song information
         songInfoText.text = "Song: " + songInfo.songTitle + "\nBPM: " + songInfo.bpm.ToString();
         bpm = songInfo.bpm;
         currentBeat = 0;
@@ -73,6 +81,10 @@ public class SongEditor : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //Don't do anything if the song is playing
+        if (isPlaying)
+            return;
+
         SnapNotes();
 
         //Change the beat on mouse scrolling
@@ -100,8 +112,8 @@ public class SongEditor : MonoBehaviour {
             AddArrow();
         }
 
-        //On right-click, remove the arrow from the song
-        if (Input.GetMouseButtonDown(1) && !Input.GetKey(fillButton))
+        //On right-click, remove the arrow from the song or fill track
+        if (Input.GetMouseButtonDown(1))
         {
             RemoveArrow();
         }
@@ -111,11 +123,7 @@ public class SongEditor : MonoBehaviour {
         {
             AddFill();
         }
-        //holding fill button, remove fill arrows on click
-        if (Input.GetKey(fillButton) && Input.GetMouseButtonDown(1))
-        {
-            RemoveFill();
-        }
+
         //Change the cursor on fillButton press
         if (Input.GetKeyDown(fillButton))
         {
@@ -127,6 +135,28 @@ public class SongEditor : MonoBehaviour {
         {
             activeCursor = arrowCursor;
             fillCursor.transform.position = new Vector3(-10, 0, 0);
+        }
+
+        //Pushing space starts the song from the current location. With shift starts it from the beginning.
+        if (Input.GetKeyDown(playSong) && !Input.GetKey(fillButton))
+        {
+            Debug.Log("Playing Song from current Position");
+            isPlaying = true;
+            //Get rid of the cursor
+            arrowCursor.transform.position = new Vector3(-10, 0, 0);
+            fillCursor.transform.position = new Vector3(-10, 0, 0);
+            //Play the song
+            EditorConductor.instance.PlayFromCurrent();
+        }
+        if (Input.GetKeyDown(playSong) && Input.GetKey(fillButton))
+        {
+            Debug.Log("Playing song from beginning");
+            isPlaying = true;
+            //Get rid of the cursor
+            arrowCursor.transform.position = new Vector3(-10, 0, 0);
+            fillCursor.transform.position = new Vector3(-10, 0, 0);
+            //Play the song from the beginning
+            EditorConductor.instance.PlayFromStart();
         }
 	}
 
@@ -140,15 +170,26 @@ public class SongEditor : MonoBehaviour {
             Debug.Log("Clicked on track: " + clickedTrack + ", beat " + clickedBeat.ToString());
             SongInfo.Note noteToAdd = new SongInfo.Note();
             noteToAdd.note = clickedBeat;
+
+            //Check first to see if there's a note there on the fill track
+            bool okToAddNote = true;
+            for (int i=0; i<songInfo.fillTracks[clickedTrack].notes.Count; i++)
+            {
+                if (songInfo.fillTracks[clickedTrack].notes[i].note == clickedBeat)
+                {
+                    Debug.Log("Already a fill note there! Can't add normal note.");
+                    okToAddNote = false;
+                }
+            }
             //Add arrow to the songInfo at that point
             //Check the specific track of that song to see where it fits
-            if (songInfo.tracks[clickedTrack].notes.Count == 0)
+            if (songInfo.tracks[clickedTrack].notes.Count == 0 && okToAddNote)
             {
                 Debug.Log("Adding to empty track");
                 songInfo.tracks[clickedTrack].notes.Add(noteToAdd);
                 UpdateSongPosition();
             }
-            else
+            else if (songInfo.tracks[clickedTrack].notes.Count != 0 && okToAddNote)
             {
                 Debug.Log("Adding to populated track");
                 bool noteAdded = false;
@@ -194,14 +235,34 @@ public class SongEditor : MonoBehaviour {
             Debug.Log("Clicked on track: " + clickedTrack + ", beat " + clickedBeat.ToString());
             SongInfo.Note noteToRemove = new SongInfo.Note();
             noteToRemove.note = clickedBeat;
-            //Add arrow to the songInfo at that point
+            //Remove arrow from the songInfo at that point
             //Check the specific track of that song to see where it fits
+            bool populatedTrack = false;
+            bool populatedFill = false;
+            //Check main track for arrows
             if (songInfo.tracks[clickedTrack].notes.Count == 0)
             {
-                Debug.Log("No arrows on that track");
-                UpdateSongPosition();
+                Debug.Log("No arrows on normal track. Checking fill track");
             }
             else
+            {
+                //There is arrows in the normal track
+                populatedTrack = true;
+            }
+            //Check the fill track for arros
+            if (songInfo.fillTracks[clickedTrack].notes.Count == 0)
+            {
+                Debug.Log("No arrows on fill track");
+            }
+            else
+            {
+                Debug.Log("Found arrows on fill track");
+                populatedFill = true;
+            }
+
+
+            //Remove the arrow from the normal track if it's populated
+            if (populatedTrack)
             {
                 Debug.Log("Checking populated track");
                 bool noteRemoved = false;
@@ -220,9 +281,34 @@ public class SongEditor : MonoBehaviour {
                 {
                     Debug.Log("Didn't right-click on note");
                 }
-                UpdateSongPosition();
             }
+
+            //Try and remove the arrow from the fill track if it's populated
+            if (populatedFill)
+            {
+                Debug.Log("Checking populated fill track");
+                bool noteRemoved = false;
+                for (int i = 0; i < songInfo.fillTracks[clickedTrack].notes.Count; i++)
+                {
+                    Debug.Log("Checking fill note: " + i.ToString());
+                    if (songInfo.fillTracks[clickedTrack].notes[i].note == clickedBeat)
+                    {
+                        Debug.Log("Found a fill note!");
+                        songInfo.fillTracks[clickedTrack].notes.RemoveAt(i);
+                        noteRemoved = true;
+                    }
+                }
+                //If you reached the end of the fill track without adding a note, this beat must occur after the last note
+                if (!noteRemoved)
+                {
+                    Debug.Log("Didn't right-click on fill note");
+                }
+            }
+
+            //Whatever happened, update the song position
+            UpdateSongPosition();
         }
+        //This only happens if you right-click off the grid
         else
         {
             Debug.Log("Invalid Right Click");
@@ -239,15 +325,26 @@ public class SongEditor : MonoBehaviour {
             Debug.Log("Clicked on fill track: " + clickedTrack + ", beat " + clickedBeat.ToString());
             SongInfo.Note fillToAdd = new SongInfo.Note();
             fillToAdd.note = clickedBeat;
+
+            //Check first to see if there's a note there on the normal track
+            bool okToAddNote = true;
+            for (int i = 0; i < songInfo.tracks[clickedTrack].notes.Count; i++)
+            {
+                if (songInfo.tracks[clickedTrack].notes[i].note == clickedBeat)
+                {
+                    Debug.Log("Already a note there! Can't add fill note.");
+                    okToAddNote = false;
+                }
+            }
             //Add arrow to the songInfo fill track at that point
             //Check the specific track of that song to see where it fits
-            if (songInfo.fillTracks[clickedTrack].notes.Count == 0)
+            if (songInfo.fillTracks[clickedTrack].notes.Count == 0 && okToAddNote)
             {
                 Debug.Log("Adding to empty fill track");
                 songInfo.fillTracks[clickedTrack].notes.Add(fillToAdd);
                 UpdateSongPosition();
             }
-            else
+            else if (songInfo.fillTracks[clickedTrack].notes.Count != 0 && okToAddNote)
             {
                 Debug.Log("Adding to populated fill track");
                 bool noteAdded = false;
@@ -282,52 +379,7 @@ public class SongEditor : MonoBehaviour {
             Debug.Log("Invalid Click");
         }
     }
-
-    void RemoveFill()
-    {
-        if (onTrack)
-        {
-            //Determine what beat and track you clicked on
-            int clickedTrack = TrackIndexFromHeight(snapVector.y);
-            float clickedBeat = BeatNumberFromX(snapVector.x);
-            Debug.Log("Clicked on fill track: " + clickedTrack + ", beat " + clickedBeat.ToString());
-            SongInfo.Note fillToRemove = new SongInfo.Note();
-            fillToRemove.note = clickedBeat;
-
-            //Add arrow to the songInfo at that point
-            //Check the specific fill track of that song to see where it fits
-            if (songInfo.fillTracks[clickedTrack].notes.Count == 0)
-            {
-                Debug.Log("No arrows on that fill track");
-                UpdateSongPosition();
-            }
-            else
-            {
-                Debug.Log("Checking populated fill track");
-                bool noteRemoved = false;
-                for (int i = 0; i < songInfo.fillTracks[clickedTrack].notes.Count; i++)
-                {
-                    Debug.Log("Checking fill note: " + i.ToString());
-                    if (songInfo.fillTracks[clickedTrack].notes[i].note == clickedBeat)
-                    {
-                        Debug.Log("Found a fill note!");
-                        songInfo.fillTracks[clickedTrack].notes.RemoveAt(i);
-                        noteRemoved = true;
-                    }
-                }
-                //If you reached the end of the fill track without adding a note, this beat must occur after the last note
-                if (!noteRemoved)
-                {
-                    Debug.Log("Didn't right-click on fill note");
-                }
-                UpdateSongPosition();
-            }
-        }
-        else
-        {
-            Debug.Log("Invalid Right Click");
-        }
-    }
+    
     void SnapNotes()
     {
         //Reset onTrack for the update
@@ -354,9 +406,9 @@ public class SongEditor : MonoBehaviour {
         {
             for (int i = 0; i < numBars*2; i++)
             {
-                if (Mathf.Abs(mouseVector.x - (inputController.transform.position.x - beatSpacing * (i + 1)/2)) < snapAccuracyX)
+                if (Mathf.Abs(mouseVector.x - (inputController.transform.position.x - beatSpacing * (i)/2)) < snapAccuracyX)
                 {
-                    snapVector.x = inputController.transform.position.x - beatSpacing * (i + 1)/2;
+                    snapVector.x = inputController.transform.position.x - beatSpacing * (i)/2;
                     onTrack = true;
                 }
             }
@@ -365,7 +417,7 @@ public class SongEditor : MonoBehaviour {
         //Make sure you're not behind the buttons
         if (onTrack)
         {
-            if (mouseVector.x > inputController.transform.position.x - snapAccuracyX)
+            if (mouseVector.x > inputController.transform.position.x + snapAccuracyX)
             {
                 onTrack = false;
             }
@@ -385,11 +437,7 @@ public class SongEditor : MonoBehaviour {
     void DrawNotes()
     {
         //First, destroy any existing notes. Helpful for scrolling
-        GameObject[] existingArrows = GameObject.FindGameObjectsWithTag("Arrow");
-        foreach (GameObject existingArrow in existingArrows)
-        {
-            Destroy(existingArrow);
-        }
+        ClearNotes();
 
         //do on every track
         for (int i=0; i < songInfo.tracks.Length; i++)
@@ -411,14 +459,30 @@ public class SongEditor : MonoBehaviour {
         }
     }
 
-    void DrawFills()
+    public void ClearNotes()
     {
-        //First, destroy any existing fill notes. Helpful for scrolling
+        //destroy all note objects
+        GameObject[] existingArrows = GameObject.FindGameObjectsWithTag("Arrow");
+        foreach (GameObject existingArrow in existingArrows)
+        {
+            Destroy(existingArrow);
+        }
+    }
+
+    public void ClearFills()
+    {
+        //Destroy all fill objects
         GameObject[] existingFills = GameObject.FindGameObjectsWithTag("FillArrow");
         foreach (GameObject existingFill in existingFills)
         {
             Destroy(existingFill);
         }
+    }
+
+    void DrawFills()
+    {
+        //First, destroy any existing fill notes. Helpful for scrolling
+        ClearFills();
 
         //do on every track
         for (int i = 0; i < songInfo.fillTracks.Length; i++)
@@ -444,11 +508,7 @@ public class SongEditor : MonoBehaviour {
     void DrawGrid()
     {
         //first, clear out any existing beat bars. Helps as we scroll
-        GameObject[] existingGrid = GameObject.FindGameObjectsWithTag("BeatBar");
-        foreach (GameObject existingBar in existingGrid)
-        {
-            Destroy(existingBar);
-        }
+        ClearGrid();
 
         //Make new bars at the beat spacing, with beat numbers
         for (int i=0; i<numBars; i++)
@@ -463,7 +523,17 @@ public class SongEditor : MonoBehaviour {
         for (int i = 0; i < numBars; i++)
         {
             GameObject currBar = Instantiate(halfBars);
-            currBar.transform.position = new Vector3(inputController.transform.position.x - (beatSpacing * (i + 1)) - 0.5f, 0);
+            currBar.transform.position = new Vector3(inputController.transform.position.x - (beatSpacing * (i + 1)) - beatSpacing/2, 0);
+        }
+    }
+
+    public void ClearGrid()
+    {
+        //Remove every grid line
+        GameObject[] existingGrid = GameObject.FindGameObjectsWithTag("BeatBar");
+        foreach (GameObject existingBar in existingGrid)
+        {
+            Destroy(existingBar);
         }
     }
 
@@ -483,7 +553,7 @@ public class SongEditor : MonoBehaviour {
         }
     }
 
-    private void UpdateSongPosition()
+    public void UpdateSongPosition()
     {
         currentBeatText.text = currentBeat.ToString();
         DrawGrid();

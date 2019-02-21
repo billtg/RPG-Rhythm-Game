@@ -7,11 +7,16 @@ public class BeatScroller : MonoBehaviour {
 
     //sStatic song information
     [Header("Song Info")]
+    public SongInfo songInfo;
     public float beatTempo;
     public float secPerBeat;
     public float offsetToFirstBeat;
+    public float beatDelay;
+    private SongInfo.Track[] tracks;
+    private SongInfo.Track[] fillTracks;
+
+    //AudioSource
     public AudioSource audioSource { get { return GetComponent<AudioSource>(); } }
-    private SongInfo songInfo;
 
     //Dynamic song information
     public float songPosition;
@@ -24,13 +29,11 @@ public class BeatScroller : MonoBehaviour {
     [Header("Note Info")]
     public int numberOfNotes = 200;
     public float timeSig;
-    public float startDelayBeats;
 
     //Fill information
     [Header("Fill Information")]
     public bool activateFill;
     public KeyCode fillButton;
-    private List<SongInfo.Track> fillTracks;
     public float fillOffset;
     private int[] trackNextFillIndices;
     public GameObject fillPrefab;
@@ -47,7 +50,6 @@ public class BeatScroller : MonoBehaviour {
     public float[] trackSpawnPosY;
     private int len;
     private int[] trackNextIndices;
-    private List<SongInfo.Track> tracks;
 
     //Static UI/gameplay information
     [Header("Gameplay/UI")]
@@ -70,6 +72,7 @@ public class BeatScroller : MonoBehaviour {
     public Text comboText;
     public Text winText;
     public Text fillText;
+    public Text songTimeText;
 
     //Instance
     public static BeatScroller instance;
@@ -89,12 +92,16 @@ public class BeatScroller : MonoBehaviour {
         comboText.text = null;
         score = 0;
 
-        //Calculate the number of seconds per beat
+        //Load song information
+        beatTempo = songInfo.bpm;
         secPerBeat = 60f / beatTempo;
+        offsetToFirstBeat = songInfo.songOffset;
+        beatDelay = songInfo.startDelayBeats;
+        audioSource.clip = songInfo.song;
 
         //Set len to the number of tracks (should be 4, maybe 8 in the future)
         //start a nextIndex for each track and set it to 0
-        len = trackSpawnPosY.Length;
+        len = songInfo.tracks.Length;
 
         trackNextIndices = new int[len];
         trackNextFillIndices = new int[len];
@@ -104,21 +111,16 @@ public class BeatScroller : MonoBehaviour {
             trackNextFillIndices[i] = 0;
         }
 
-        //Initialize tracks and fillTracks as a list of length len
-        tracks = new List<SongInfo.Track>();
-        fillTracks = new List<SongInfo.Track>();
-        for (int i=0; i < len; i++)
-        {
-            tracks.Add(new SongInfo.Track());
-            fillTracks.Add(new SongInfo.Track());
-        }
+        //Initialize tracks and fillTracks from songInfo
+        tracks = songInfo.tracks;
+        fillTracks = songInfo.tracks;
 
 
         //Populate the tracks from the song info
         //*Eventually I'll do this, but in the mean time, make a dummy set
         //tracks = songInfo.tracks;
-        PopulateTracks();
-        PopulateFills();
+        //PopulateTracks();
+        //PopulateFills();
 
         //Run the countdown preparing to start
         StartCoroutine(CountDown());
@@ -134,7 +136,7 @@ public class BeatScroller : MonoBehaviour {
         songPosition = (float)(AudioSettings.dspTime - dspSongTime);
 
         //calculate the position in beats
-        songPosInBeats = songPosition / secPerBeat;
+        songPosInBeats = songPosition / secPerBeat - beatDelay;
         
         //Check if solo or fill needs activating
         if (Input.GetKeyDown(fillButton) && fillMeter == fillMeterMax)
@@ -148,6 +150,7 @@ public class BeatScroller : MonoBehaviour {
         SpawnNotes();
         SpawnFills();
 
+        songTimeText.text = audioSource.time.ToString();
     }
 
     void StartMusic()
@@ -196,7 +199,7 @@ public class BeatScroller : MonoBehaviour {
                 //Set the note's startup conditions and let it fly
                 noteController.Initialize(trackSpawnPosY[i], startLineX, finishLineX, removeLineX, 0, currNote.note, InputController.instance.keyBindings[i], i);
 
-                //Debug.Log("Spawned note with beat #: " + notes[nextIndex].ToString() + "on beat " + songPosInBeats.ToString());
+                Debug.Log("Spawned note with beat #: " + currTrack.notes[nextIndex].ToString() + "on beat " + songPosInBeats.ToString());
 
                 //Increase the note index
                 trackNextIndices[i]++;
@@ -353,69 +356,69 @@ public class BeatScroller : MonoBehaviour {
         fillBar.UpdateScale((float)fillMeter/fillMeterMax);
     }
 
-    void PopulateTracks()
-    {
-        //Debug.Log("Populating Tracks");
-        //Debug.Log("total of " + tracks.Count.ToString() + " tracks");
-        //Create notes for each track
-        for (int i=0; i<len; i++)
-        {
-            //Debug.Log("Populating track " + i.ToString());
-            tracks[i].notes = new List<SongInfo.Note>();
-            //For this track, make the test notes, based on the time signature
-            for (int j = 0; j < numberOfNotes; j++)
-            {
-                tracks[i].notes.Add(new SongInfo.Note());
-                if (j == 0)
-                {
-                    //Make the first note occur timeSig beats after the track start, plus startDelay beats, plus i (offsets tracks)
-                    tracks[i].notes[j].note = timeSig + startDelayBeats + timeSig*i/tracks.Count;
-                    //Debug.Log(notes[j].ToString());
-                }
-                else
-                {
-                    //Increment the next note by one timeSig beats from the last note
-                    tracks[i].notes[j].note = tracks[i].notes[j - 1].note + timeSig;
-                }
-                //Debug.Log("Track " + i.ToString() + " note " + j.ToString() + " beat" + tracks[i].notes[j].note.ToString());
-            }
-            //Debug.Log("Track " + i.ToString() + " populated with " + tracks[i].notes.Count.ToString() + " notes");
-        }
-        //Debug.Log("Tracks populated");
-    }
+    //void PopulateTracks()
+    //{
+    //    //Debug.Log("Populating Tracks");
+    //    //Debug.Log("total of " + tracks.Count.ToString() + " tracks");
+    //    //Create notes for each track
+    //    for (int i=0; i<len; i++)
+    //    {
+    //        //Debug.Log("Populating track " + i.ToString());
+    //        tracks[i].notes = new List<SongInfo.Note>();
+    //        //For this track, make the test notes, based on the time signature
+    //        for (int j = 0; j < numberOfNotes; j++)
+    //        {
+    //            tracks[i].notes.Add(new SongInfo.Note());
+    //            if (j == 0)
+    //            {
+    //                //Make the first note occur timeSig beats after the track start, plus startDelay beats, plus i (offsets tracks)
+    //                tracks[i].notes[j].note = timeSig + startDelayBeats + timeSig*i/tracks.Count;
+    //                //Debug.Log(notes[j].ToString());
+    //            }
+    //            else
+    //            {
+    //                //Increment the next note by one timeSig beats from the last note
+    //                tracks[i].notes[j].note = tracks[i].notes[j - 1].note + timeSig;
+    //            }
+    //            //Debug.Log("Track " + i.ToString() + " note " + j.ToString() + " beat" + tracks[i].notes[j].note.ToString());
+    //        }
+    //        //Debug.Log("Track " + i.ToString() + " populated with " + tracks[i].notes.Count.ToString() + " notes");
+    //    }
+    //    //Debug.Log("Tracks populated");
+    //}
 
-    void PopulateFills()
-    {
-        //Debug.Log("Populating Fill Tracks");
-        //Debug.Log("total of " + fillTracks.Count.ToString() + " tracks");
-        //Create notes for each track
-        //i refers to the track, j refers to the note in that track
-        for (int i = 0; i < len; i++)
-        {
-            //Debug.Log("Populating track " + i.ToString());
-            fillTracks[i].notes = new List<SongInfo.Note>();
-            //For this track, make the test notes, based on the time signature
-            for (int j = 0; j < numberOfNotes; j++)
-            {
-                fillTracks[i].notes.Add(new SongInfo.Note());
-                if (j == 0)
-                {
-                    //Make the first note occur timeSig beats after the track start, plus startDelay beats, plus i (offsets tracks)
-                    //***NOTE, for fill I added two beats to each to offset them from the regular tracks.
-                    fillTracks[i].notes[j].note = timeSig + startDelayBeats + timeSig * i / fillTracks.Count + fillOffset;
-                    //Debug.Log(notes[j].ToString());
-                }
-                else
-                {
-                    //Increment the next note by one timeSig beats from the last note
-                    fillTracks[i].notes[j].note = fillTracks[i].notes[j - 1].note + timeSig;
-                }
-                Debug.Log("Track " + i.ToString() + " note " + j.ToString() + " beat" + tracks[i].notes[j].note.ToString());
-            }
-            //Debug.Log("Track " + i.ToString() + " populated with " + tracks[i].notes.Count.ToString() + " notes");
-        }
-        //Debug.Log("Tracks populated");
-    }
+    //void PopulateFills()
+    //{
+    //    //Debug.Log("Populating Fill Tracks");
+    //    //Debug.Log("total of " + fillTracks.Count.ToString() + " tracks");
+    //    //Create notes for each track
+    //    //i refers to the track, j refers to the note in that track
+    //    for (int i = 0; i < len; i++)
+    //    {
+    //        //Debug.Log("Populating track " + i.ToString());
+    //        fillTracks[i].notes = new List<SongInfo.Note>();
+    //        //For this track, make the test notes, based on the time signature
+    //        for (int j = 0; j < numberOfNotes; j++)
+    //        {
+    //            fillTracks[i].notes.Add(new SongInfo.Note());
+    //            if (j == 0)
+    //            {
+    //                //Make the first note occur timeSig beats after the track start, plus startDelay beats, plus i (offsets tracks)
+    //                //***NOTE, for fill I added two beats to each to offset them from the regular tracks.
+    //                fillTracks[i].notes[j].note = timeSig + startDelayBeats + timeSig * i / fillTracks.Count + fillOffset;
+    //                //Debug.Log(notes[j].ToString());
+    //            }
+    //            else
+    //            {
+    //                //Increment the next note by one timeSig beats from the last note
+    //                fillTracks[i].notes[j].note = fillTracks[i].notes[j - 1].note + timeSig;
+    //            }
+    //            Debug.Log("Track " + i.ToString() + " note " + j.ToString() + " beat" + tracks[i].notes[j].note.ToString());
+    //        }
+    //        //Debug.Log("Track " + i.ToString() + " populated with " + tracks[i].notes.Count.ToString() + " notes");
+    //    }
+    //    //Debug.Log("Tracks populated");
+    //}
 
     
 }

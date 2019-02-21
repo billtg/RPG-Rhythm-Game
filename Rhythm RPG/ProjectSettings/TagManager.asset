@@ -46,11 +46,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Arrows
-    uniqueID: 2794211987
-    locked: 0
   - name: Middle Thing
     uniqueID: 1618074979
+    locked: 0
+  - name: Buttons
+    uniqueID: 248091359
+    locked: 0
+  - name: Bars
+    uniqueID: 1872373447
+    locked: 0
+  - name: Arrows
+    uniqueID: 2794211987
     locked: 0
   - name: UI
     uniqueID: 855682031
